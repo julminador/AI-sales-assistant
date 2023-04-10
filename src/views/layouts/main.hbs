@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ventas</title>
+</head>
+<body>
+  <span id="input-voice"></span>
+  <h1>Lista de ventas</h1>
+  <ul>
+    {{#each ventas}}
+      <li>{{id}}. {{producto}} - ${{precio}}</li>
+    {{/each}}
+  </ul>
+  <button id="btn-reproducir">Reproducir</button>
+  <button id="btn-escuchar">Escuchar</button>
+
+  <script src="/js/ventas.js"></script>
+</body>
+</html>

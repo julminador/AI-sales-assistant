@@ -1,0 +1,27 @@
+{
+  "name": "ai-sales-assistant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julminador/AI-sales-assistant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/julminador/AI-sales-assistant/issues"
+  },
+  "homepage": "https://github.com/julminador/AI-sales-assistant#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.4",
+    "handlebars": "^4.7.7",
+    "nodemon": "^2.0.22"
+  }
+}

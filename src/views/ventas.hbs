@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ventas</title>
+</head>
+<body>
+  <h1>Lista de ventas</h1>
+  <ul>
+    {{#each ventas}}
+      <li>{{id}}. {{producto}} - ${{precio}}</li>
+    {{/each}}
+  </ul>
+</body>
+</html>
