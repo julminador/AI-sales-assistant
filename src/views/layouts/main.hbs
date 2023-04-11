@@ -1,22 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ventas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Julian Sanchez @Julminador">
+  <title>AI sales assistant</title>
+  <link rel="apple-touch-icon" href="/materialize/images/favicon/apple-touch-icon-152x152.png">
+  <link rel="shortcut icon" type="image/x-icon" href="/materialize/images/favicon/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- BEGIN: VENDOR CSS-->
+  <link rel="stylesheet" type="text/css" href="/materialize/vendors/vendors.min.css">
+  <link rel="stylesheet" type="text/css" href="/materialize/vendors/noUiSlider/nouislider.min.css">
+  <!-- BEGIN: Page Level CSS-->
+  <link rel="stylesheet" type="text/css" href="/materialize/css/themes/vertical-dark-menu-template/materialize.css">
+  <link rel="stylesheet" type="text/css" href="/materialize/css/themes/vertical-dark-menu-template/style.css">
+  <link rel="stylesheet" type="text/css" href="/materialize/css/pages/eCommerce-products-page.css">
+  <!-- BEGIN: Custom CSS-->
+  <link rel="stylesheet" type="text/css" href="/materialize/css/custom/custom.css">
 </head>
 <body>
-  <span id="input-voice"></span>
-  <h1>Lista de ventas</h1>
-  <ul>
-    {{#each ventas}}
-      <li>{{id}}. {{producto}} - ${{precio}}</li>
-    {{/each}}
-  </ul>
-  <button id="btn-reproducir">Reproducir</button>
-  <button id="btn-escuchar">Escuchar</button>
+  {{> navigation}}
 
-  <script src="/js/ventas.js"></script>
+  {{{ body }}}
+
+  <!-- BEGIN: Footer-->
+  <footer class="page-footer footer footer-static footer-light navbar-border navbar-shadow">
+    <div class="footer-copyright">
+      <div class="container"><span>&copy; 2020 <a href="http://themeforest.net/user/pixinvent/portfolio?ref=pixinvent" target="_blank">PIXINVENT</a> All rights reserved.</span><span class="right hide-on-small-only">Design and Developed by <a href="https://pixinvent.com/">PIXINVENT</a></span></div>
+    </div>
+  </footer>
+
+  <!-- BEGIN VENDOR JS-->
+  <script src="/materialize/js/vendors.min.js"></script>
+  <!-- BEGIN PAGE VENDOR JS-->
+  <script src="/materialize/vendors/noUiSlider/nouislider.min.js"></script>
+  <!-- BEGIN THEME  JS-->
+  <script src="/materialize/js/plugins.js"></script>
+  <script src="/materialize/js/search.js"></script>
+  <script src="/materialize/js/custom/custom-script.js"></script>
+  <!-- BEGIN PAGE LEVEL JS-->
+  <script src="/materialize/js/scripts/advance-ui-modals.js"></script>
+  <script src="/materialize/js/scripts/eCommerce-products-page.js"></script>
 </body>
 </html>
